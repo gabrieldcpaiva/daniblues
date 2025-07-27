@@ -162,7 +162,7 @@ const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-white rounded-xl shadow-lg p-8"
+            className="bg-elegant-white rounded-xl shadow-lg p-8"
           >
             <h3 className="text-2xl font-serif font-semibold text-elegant-black mb-6">
               Send us a Message
