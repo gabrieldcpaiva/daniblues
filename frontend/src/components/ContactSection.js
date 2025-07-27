@@ -282,7 +282,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-16 bg-white rounded-xl shadow-lg overflow-hidden"
+          className="mt-16 bg-elegant-white rounded-xl shadow-lg overflow-hidden"
         >
           <div className="h-96">
             <iframe
