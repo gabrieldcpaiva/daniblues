@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const BioSection = () => {
   return (
-    <section className="py-20 bg-elegant-lightgray">
+    <section className="py-20 bg-elegant-cream">
       <div className="container-max section-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
@@ -23,8 +23,8 @@ const BioSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-elegant-black/30 to-transparent"></div>
             </div>
             {/* Decorative Elements */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-gold-500/20 rounded-full"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gold-500/10 rounded-full"></div>
+            <div className="absolute -top-6 -right-6 w-24 h-24 bg-purple-500/20 rounded-full"></div>
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-500/10 rounded-full"></div>
           </motion.div>
 
           {/* Content */}
@@ -39,7 +39,7 @@ const BioSection = () => {
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-elegant-black mb-4">
                 About <span className="text-gradient">Dani Blues</span>
               </h2>
-              <div className="w-20 h-1 bg-gold-500 mb-6"></div>
+              <div className="w-20 h-1 bg-purple-500 mb-6"></div>
             </div>
 
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
@@ -62,15 +62,15 @@ const BioSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold-500 mb-2">5+</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">5+</div>
                 <div className="text-sm text-gray-600 uppercase tracking-wide">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold-500 mb-2">500+</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">500+</div>
                 <div className="text-sm text-gray-600 uppercase tracking-wide">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold-500 mb-2">11</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">11</div>
                 <div className="text-sm text-gray-600 uppercase tracking-wide">Product Lines</div>
               </div>
             </div>
