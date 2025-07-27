@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center">
               <span className="text-2xl font-serif font-bold text-white">
-                DANI<span className="text-gold-500">BLUES</span>
+                DANI<span className="text-purple-400">BLUES</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed">
