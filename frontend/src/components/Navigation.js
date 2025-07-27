@@ -100,7 +100,7 @@ const Navigation = () => {
                   <button
                     key={item.name}
                     onClick={handleContactClick}
-                    className="text-elegant-lightgray hover:text-gold-500 block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-300"
+                    className="text-elegant-lightgray hover:text-purple-400 block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-300"
                   >
                     {item.name}
                   </button>
