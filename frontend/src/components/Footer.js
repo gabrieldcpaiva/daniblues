@@ -24,7 +24,7 @@ const Footer = () => {
                 href={process.env.REACT_APP_INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-elegant-lightgray hover:text-gold-500 transition-colors duration-300"
+                className="text-elegant-lightgray hover:text-purple-400 transition-colors duration-300"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.35-1.052-2.35-2.35 0-1.297 1.052-2.35 2.35-2.35 1.297 0 2.35 1.052 2.35 2.35 0 1.297-1.052 2.35-2.35 2.35zm7.718 0c-1.297 0-2.35-1.052-2.35-2.35 0-1.297 1.052-2.35 2.35-2.35 1.297 0 2.35 1.052 2.35 2.35 0 1.297-1.052 2.35-2.35 2.35z"/>
