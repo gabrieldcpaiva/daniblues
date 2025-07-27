@@ -111,8 +111,8 @@ const Navigation = () => {
                     onClick={() => setIsOpen(false)}
                     className={`block px-3 py-2 text-base font-medium transition-colors duration-300 ${
                       isActive(item.href)
-                        ? 'text-gold-500'
-                        : 'text-elegant-lightgray hover:text-gold-500'
+                        ? 'text-purple-400'
+                        : 'text-elegant-lightgray hover:text-purple-400'
                     }`}
                   >
                     {item.name}
