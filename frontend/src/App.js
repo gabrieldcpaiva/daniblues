@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
-      <div className="App min-h-screen bg-elegant-white">
+      <div className="App min-h-screen bg-elegant-cream">
         <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />
