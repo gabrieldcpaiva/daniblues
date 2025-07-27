@@ -125,7 +125,7 @@ const ServicesSection = () => {
               </div>
               
               {/* Title */}
-              <h3 className="text-xl font-serif font-semibold text-elegant-black mb-4 group-hover:text-gold-600 transition-colors duration-300">
+              <h3 className="text-xl font-serif font-semibold text-elegant-black mb-4 group-hover:text-purple-600 transition-colors duration-300">
                 {service.title}
               </h3>
               
@@ -135,7 +135,7 @@ const ServicesSection = () => {
               </p>
               
               {/* Learn More Button */}
-              <button className="text-gold-500 font-medium text-sm hover:text-gold-600 transition-colors duration-300 flex items-center justify-center space-x-2 mx-auto">
+              <button className="text-purple-500 font-medium text-sm hover:text-purple-600 transition-colors duration-300 flex items-center justify-center space-x-2 mx-auto">
                 <span>Learn More</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
