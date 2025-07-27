@@ -7,23 +7,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gold: {
-          50: '#fefbf0',
-          100: '#fef5d6',
-          200: '#fdebad',
-          300: '#fcd974',
-          400: '#f9c94a',
-          500: '#f5b22a',
-          600: '#d4921a',
-          700: '#b07318',
-          800: '#8f5a1a',
-          900: '#764a19',
+        purple: {
+          50: '#faf7ff',
+          100: '#f3edff',
+          200: '#e9deff',
+          300: '#d6c1ff',
+          400: '#be9bff',
+          500: '#a374ff',
+          600: '#8b4cf7',
+          700: '#7c3aed',
+          800: '#6830c8',
+          900: '#552ba0',
         },
         elegant: {
           black: '#0a0a0a',
           darkgray: '#1a1a1a',
-          lightgray: '#f8f8f8',
-          white: '#ffffff'
+          lightgray: '#f5f5f7',
+          white: '#fafafa',
+          cream: '#fcfcfc'
         }
       },
       fontFamily: {
