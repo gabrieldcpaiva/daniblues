@@ -136,14 +136,14 @@ const ContactSection = () => {
             </div>
 
             {/* Quick Actions */}
-            <div className="bg-white rounded-xl p-6 shadow-lg">
+            <div className="bg-elegant-white rounded-xl p-6 shadow-lg">
               <h4 className="font-semibold text-elegant-black mb-4">Quick Actions</h4>
               <div className="space-y-3">
                 <a
                   href={`https://wa.me/${process.env.REACT_APP_WHATSAPP_NUMBER?.replace('+', '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gold-50 transition-colors duration-300"
+                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-purple-50 transition-colors duration-300"
                 >
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
