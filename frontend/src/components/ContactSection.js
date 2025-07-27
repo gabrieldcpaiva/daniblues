@@ -120,7 +120,7 @@ const ContactSection = () => {
                           {item.action ? (
                             <a 
                               href={item.action}
-                              className="hover:text-gold-500 transition-colors duration-300"
+                              className="hover:text-purple-500 transition-colors duration-300"
                             >
                               {detail}
                             </a>
