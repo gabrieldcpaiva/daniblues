@@ -1,0 +1,99 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const BioSection = () => {
+  return (
+    <section className="py-20 bg-elegant-lightgray">
+      <div className="container-max section-padding">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxoYWlyJTIwc2Fsb258ZW58MHx8fGJsYWNrX2FuZF93aGl0ZXwxNzUzNjA4MTQ0fDA&ixlib=rb-4.1.0&q=85"
+                alt="Professional Hair Salon Interior"
+                className="w-full h-[500px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-elegant-black/30 to-transparent"></div>
+            </div>
+            {/* Decorative Elements */}
+            <div className="absolute -top-6 -right-6 w-24 h-24 bg-gold-500/20 rounded-full"></div>
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gold-500/10 rounded-full"></div>
+          </motion.div>
+
+          {/* Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <div>
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-elegant-black mb-4">
+                About <span className="text-gradient">Dani Blues</span>
+              </h2>
+              <div className="w-20 h-1 bg-gold-500 mb-6"></div>
+            </div>
+
+            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+              <p>
+                <strong className="text-elegant-black">Representative and distributor in the UK</strong> of Brazilian hair products, 
+                Dani Blues Hair & Beauty stands at the forefront of hair innovation and beauty excellence.
+              </p>
+              
+              <p>
+                <strong className="text-elegant-black">Specialist in haircuts, treatments, and online analysis</strong> in Scotland 
+                (Bathgate/Edinburgh), we bring you the finest in hair care technology and expertise.
+              </p>
+              
+              <p>
+                We use <strong className="text-elegant-black">high-quality, cutting-edge technology</strong> to restore shine, 
+                softness, and vitality to your hair, ensuring every client leaves feeling confident and beautiful.
+              </p>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-gold-500 mb-2">5+</div>
+                <div className="text-sm text-gray-600 uppercase tracking-wide">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-gold-500 mb-2">500+</div>
+                <div className="text-sm text-gray-600 uppercase tracking-wide">Happy Clients</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-gold-500 mb-2">11</div>
+                <div className="text-sm text-gray-600 uppercase tracking-wide">Product Lines</div>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="pt-6">
+              <a
+                href={`https://wa.me/${process.env.REACT_APP_WHATSAPP_NUMBER?.replace('+', '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center space-x-2"
+              >
+                <span>Get Consultation</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BioSection;
