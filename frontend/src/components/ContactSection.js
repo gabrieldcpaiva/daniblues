@@ -73,7 +73,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-elegant-lightgray">
+    <section id="contact" className="py-20 bg-elegant-cream">
       <div className="container-max section-padding">
         {/* Section Header */}
         <motion.div
@@ -86,7 +86,7 @@ const ContactSection = () => {
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-elegant-black mb-4">
             Get in <span className="text-gradient">Touch</span>
           </h2>
-          <div className="w-20 h-1 bg-gold-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-purple-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Ready to transform your hair? Contact us today for a consultation or to book your appointment
           </p>
