@@ -80,7 +80,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-elegant-lightgray hover:text-gold-500 focus:outline-none"
+              className="text-elegant-lightgray hover:text-purple-400 focus:outline-none"
             >
               {isOpen ? (
                 <XMarkIcon className="h-6 w-6" />
