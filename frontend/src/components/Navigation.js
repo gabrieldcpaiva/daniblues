@@ -34,8 +34,8 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-serif font-bold text-white">
-              DANI<span className="text-gold-500">BLUES</span>
+            <span className="text-2xl font-serif font-bold text-white tracking-wider">
+              DANI<span className="text-purple-400">BLUES</span>
             </span>
           </Link>
 
