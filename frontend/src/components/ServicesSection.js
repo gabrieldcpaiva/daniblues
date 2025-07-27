@@ -86,7 +86,7 @@ const ServicesSection = () => {
   }
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-elegant-white">
       <div className="container-max section-padding">
         {/* Section Header */}
         <motion.div
@@ -99,7 +99,7 @@ const ServicesSection = () => {
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-elegant-black mb-4">
             Our <span className="text-gradient">Services</span>
           </h2>
-          <div className="w-20 h-1 bg-gold-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-purple-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Experience premium hair care with our comprehensive range of professional services
           </p>
