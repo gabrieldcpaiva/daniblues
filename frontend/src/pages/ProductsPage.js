@@ -10,30 +10,13 @@ const ProductsPage = () => {
 
   const products = [
     {
-      id: 'professional-washbasins',
-      name: 'Professional Washbasins',
-      description: 'Professional hydration without weight for all hair types',
-      benefits: [
-        'Deep hydration without adding weight',
-        'Professional salon-quality results',
-        'Suitable for all hair types',
-        'Long-lasting moisture retention'
-      ],
-      products: [
-        'Shampoo (2500ml)',
-        'Conditioner (2500ml)'
-      ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
-    },
-    {
       id: 'bioplastia-clinic',
       name: 'Bioplastia Clinic',
       description: 'Advanced strand reconstruction technology that repairs chemical damage',
       benefits: [
         'Reconstructs damaged hair strands',
-        'Repairs chemical damage from treatments',
-        'Restores hair fiber integrity',
-        'Professional clinical results'
+        'Repairs chemical damage',
+        'Restores hair fiber integrity'
       ],
       products: [
         'Reconstructive Treatment',
@@ -49,8 +32,7 @@ const ProductsPage = () => {
       benefits: [
         'Deep intensive hydration',
         '24-hour frizz control',
-        'Protection against pollution',
-        'Enhanced shine and softness'
+        'Protection against pollution'
       ],
       products: [
         'Shampoo (2400ml)',
@@ -66,8 +48,7 @@ const ProductsPage = () => {
       benefits: [
         'Chemical-free smoothing process',
         'Ultra-lasting smooth results',
-        'Reduces volume and frizz',
-        'Natural hair movement preserved'
+        'Reduces volume and frizz'
       ],
       products: [
         'Shampoo (2400ml)',
@@ -84,8 +65,7 @@ const ProductsPage = () => {
       benefits: [
         'Enhanced curl definition',
         'Deep nutrition for curly hair',
-        'Eliminates frizz while maintaining bounce',
-        'Long-lasting curl formation'
+        'Eliminates frizz while maintaining bounce'
       ],
       products: [
         'Curl Defining Shampoo',
@@ -102,8 +82,7 @@ const ProductsPage = () => {
       benefits: [
         'Innovative bee venom formula',
         'Professional straightening results',
-        'Hair strengthening properties',
-        'Natural shine enhancement'
+        'Hair strengthening properties'
       ],
       products: [
         'Purifying Shampoo (500ml)',
@@ -119,8 +98,7 @@ const ProductsPage = () => {
       benefits: [
         'Eliminates unwanted yellow tones',
         'Achieves platinum blonde perfection',
-        'Maintains color vibrancy',
-        'Professional color correction'
+        'Maintains color vibrancy'
       ],
       products: [
         'Purple Shampoo',
@@ -136,8 +114,7 @@ const ProductsPage = () => {
       benefits: [
         'Seals split ends instantly',
         'Regenerates damaged hair tips',
-        'Prevents future breakage',
-        'Improves overall hair health'
+        'Prevents future breakage'
       ],
       products: [
         'End Sealing Serum',
@@ -153,8 +130,7 @@ const ProductsPage = () => {
       benefits: [
         'Balances oily roots and dry ends',
         'Delicious blueberry scent',
-        'Daily use formula',
-        'Antioxidant protection'
+        'Daily use formula'
       ],
       products: [
         'Balancing Shampoo',
@@ -170,30 +146,12 @@ const ProductsPage = () => {
       benefits: [
         'Biotin enriched for strength',
         'Promotes hair growth',
-        'Increases hair thickness',
-        'Revitalizes weak hair'
+        'Increases hair thickness'
       ],
       products: [
         'Strengthening Shampoo',
         'Biotin Conditioner',
         'Growth Serum'
-      ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
-    },
-    {
-      id: 'silver-slim',
-      name: 'Silver Slim',
-      description: 'Enhances natural grey hair luster and eliminates yellowing',
-      benefits: [
-        'Enhances grey hair beauty',
-        'Eliminates yellow undertones',
-        'Adds brilliant shine',
-        'Maintains silver elegance'
-      ],
-      products: [
-        'Silver Shampoo',
-        'Brightening Conditioner',
-        'Shine Enhancement Mask'
       ],
       image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
     }
