@@ -280,14 +280,14 @@ const ContactSection = () => {
         >
           <div className="h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71649.51434989767!2d-3.3742739!3d55.93634735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh%2C%20UK!5e0!3m2!1sen!2sus!4v1647887654321!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.123456789!2d-3.2058!3d55.9387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a123456789%3A0x123456789abcdef!2s70%20Dalry%20Rd%2C%20Edinburgh%20EH11%201LJ%2C%20UK!5e0!3m2!1sen!2sus!4v1647887654321!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Dani Blues Hair & Beauty Location - Edinburgh, Scotland"
+              title="Dani Blues Hair & Beauty Location - 70 Dalry Road, Edinburgh EH11 1LJ"
             ></iframe>
           </div>
         </motion.div>
