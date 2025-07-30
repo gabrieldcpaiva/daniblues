@@ -29,14 +29,16 @@ const ContactSection = () => {
 
     try {
       const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, formData);
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-        service_interest: ''
-      });
+      if (response.status === 200) {
+        setSubmitStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+          service_interest: ''
+        });
+      }
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
