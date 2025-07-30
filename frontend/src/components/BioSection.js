@@ -44,34 +44,38 @@ const BioSection = () => {
 
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                <strong className="text-elegant-black">Representative and distributor in the UK</strong> of Brazilian hair products, 
-                Dani Blues Hair & Beauty stands at the forefront of hair innovation and beauty excellence.
+                Representative and distributor of select Brazilian hair products in the UK, <strong className="text-elegant-black">Dani Blues Hair & Beauty</strong> blends advanced hair technology with soulful, expert care.
               </p>
               
               <p>
-                <strong className="text-elegant-black">Specialist in haircuts, treatments, and online analysis</strong> in Scotland 
-                (Bathgate/Edinburgh), we bring you the finest in hair care technology and expertise.
+                With over <strong className="text-elegant-black">13 years of experience as a professional hairdresser</strong> and a dedicated salon operating in Scotland (Bathgate/Edinburgh) for the past <strong className="text-elegant-black">2+ years</strong>, Dani offers precision haircuts, targeted treatments, and personalised consultations — both in person and online.
               </p>
               
               <p>
-                We use <strong className="text-elegant-black">high-quality, cutting-edge technology</strong> to restore shine, 
-                softness, and vitality to your hair, ensuring every client leaves feeling confident and beautiful.
+                We use high-quality, cutting-edge techniques to restore <strong className="text-elegant-black">shine</strong>, <strong className="text-elegant-black">softness</strong>, and <strong className="text-elegant-black">vitality</strong> to your hair, ensuring every client leaves feeling radiant and confident.
               </p>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">5+</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wide">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">500+</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wide">Happy Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">11</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wide">Product Lines</div>
+            <div className="pt-8">
+              <div className="bg-elegant-white rounded-xl p-6 shadow-sm">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <div className="text-sm text-gray-500 mb-2 uppercase tracking-wide">🧵 Years in the Profession</div>
+                    <div className="text-3xl font-bold text-purple-600">13+</div>
+                    <div className="text-sm text-gray-600">Years Experience</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-sm text-gray-500 mb-2 uppercase tracking-wide">🌍 Studio in the UK</div>
+                    <div className="text-3xl font-bold text-purple-600">2+</div>
+                    <div className="text-sm text-gray-600">Years Active</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-sm text-gray-500 mb-2 uppercase tracking-wide">🧴 Curated Product Lines</div>
+                    <div className="text-3xl font-bold text-purple-600">9</div>
+                    <div className="text-sm text-gray-600">Brazilian Formulas</div>
+                  </div>
+                </div>
               </div>
             </div>
 
