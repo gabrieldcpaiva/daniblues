@@ -32,7 +32,7 @@ const ProductInquiryModal = ({ product, onClose }) => {
         product_name: product.name
       };
       
-      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/product-inquiry`, inquiryData);
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/product-inquiry`, inquiryData);
       setSubmitStatus('success');
       setFormData({
         name: '',
