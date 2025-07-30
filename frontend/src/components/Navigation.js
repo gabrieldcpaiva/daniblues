@@ -21,9 +21,16 @@ const Navigation = () => {
   const handleContactClick = (e) => {
     e.preventDefault();
     if (location.pathname !== '/') {
+      // If not on home page, navigate to home then scroll
       window.location.href = '/#contact';
     } else {
-      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      // If on home page, smooth scroll with offset for fixed header
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        const yOffset = -80; // Offset for fixed header
+        const y = contactSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
     }
     setIsOpen(false);
   };
