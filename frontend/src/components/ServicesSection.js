@@ -121,11 +121,11 @@ const ServicesSection = () => {
             >
               {/* Icon */}
               <div className="mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center">
-                <img 
-                  src={service.icon} 
-                  alt={`${service.title} Icon`}
-                  className="w-16 h-16 object-contain filter opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-                />
+                <div className="w-20 h-20 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:from-purple-50 group-hover:to-purple-100">
+                  <span className="text-3xl filter grayscale group-hover:grayscale-0 transition-all duration-300">
+                    {service.icon}
+                  </span>
+                </div>
               </div>
               
               {/* Title */}
