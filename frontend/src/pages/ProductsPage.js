@@ -259,9 +259,15 @@ const ProductsPage = () => {
                           <h4 className="font-semibold text-elegant-black mb-4">Benefits</h4>
                           <div className="flex flex-wrap gap-2 mb-4">
                             {product.benefits.map((benefit, idx) => (
-                              <span key={idx} className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">
+                              <motion.span 
+                                key={idx} 
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.3, delay: idx * 0.1 }}
+                                className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full hover:bg-purple-200 transition-colors duration-300 cursor-default"
+                              >
                                 {benefit}
-                              </span>
+                              </motion.span>
                             ))}
                           </div>
                         </div>
