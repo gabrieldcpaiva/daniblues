@@ -139,12 +139,15 @@ const ServicesSection = () => {
               </p>
               
               {/* Learn More Button */}
-              <button className="text-purple-500 font-medium text-sm hover:text-purple-600 transition-colors duration-300 flex items-center justify-center space-x-2 mx-auto">
+              <Link 
+                to="/products"
+                className="text-purple-500 font-medium text-sm hover:text-purple-600 transition-colors duration-300 flex items-center justify-center space-x-2 mx-auto"
+              >
                 <span>Learn More</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </button>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
