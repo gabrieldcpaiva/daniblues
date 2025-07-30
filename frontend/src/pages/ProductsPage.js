@@ -158,15 +158,6 @@ const ProductsPage = () => {
     }
   ];
 
-  const toggleProduct = (productId) => {
-    setExpandedProduct(expandedProduct === productId ? null : productId);
-  };
-
-  const handleBuyNow = (product) => {
-    setSelectedProduct(product);
-    setShowModal(true);
-  };
-
   return (
     <div className="min-h-screen bg-elegant-lightgray pt-16">
       {/* Header */}
