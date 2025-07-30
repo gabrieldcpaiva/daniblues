@@ -72,13 +72,25 @@ const ServicesSection = () => {
 
   if (loading) {
     return (
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-20 bg-elegant-white">
         <div className="container-max section-padding">
-          <div className="text-center">
+          <div className="text-center mb-16">
             <div className="animate-pulse">
               <div className="h-12 bg-gray-200 rounded w-64 mx-auto mb-4"></div>
-              <div className="h-4 bg-gray-200 rounded w-96 mx-auto"></div>
+              <div className="w-20 h-1 bg-gray-200 mx-auto mb-6"></div>
+              <div className="h-6 bg-gray-200 rounded w-96 mx-auto"></div>
             </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[1,2,3,4].map((item) => (
+              <div key={item} className="bg-elegant-cream rounded-xl p-8 animate-pulse">
+                <div className="w-20 h-20 bg-gray-200 rounded-2xl mx-auto mb-6"></div>
+                <div className="h-6 bg-gray-200 rounded mb-4"></div>
+                <div className="h-4 bg-gray-200 rounded mb-2"></div>
+                <div className="h-4 bg-gray-200 rounded mb-6"></div>
+                <div className="h-4 bg-gray-200 rounded w-24 mx-auto"></div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
