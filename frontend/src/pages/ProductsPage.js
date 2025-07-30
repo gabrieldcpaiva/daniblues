@@ -209,11 +209,11 @@ const ProductsPage = () => {
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
-                      <div className="w-16 h-16 bg-gold-100 rounded-lg flex-shrink-0 overflow-hidden">
+                      <div className="w-20 h-20 bg-purple-50 rounded-lg flex-shrink-0 overflow-hidden group-hover:bg-purple-100 transition-colors duration-300">
                         <img
                           src={product.image}
                           alt={product.name}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       </div>
                       <div>
