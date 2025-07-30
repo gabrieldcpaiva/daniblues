@@ -5,8 +5,6 @@ import ProductInquiryModal from '../components/ProductInquiryModal';
 
 const ProductsPage = () => {
   const [expandedProduct, setExpandedProduct] = useState(null);
-  const [selectedProduct, setSelectedProduct] = useState(null);
-  const [showModal, setShowModal] = useState(false);
 
   const products = [
     {
