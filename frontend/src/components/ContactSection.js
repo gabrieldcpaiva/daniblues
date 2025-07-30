@@ -49,7 +49,7 @@ const ContactSection = () => {
     {
       icon: MapPinIcon,
       title: 'Location',
-      details: ['Edinburgh / Bathgate', 'Scotland, UK'],
+      details: ['70 Dalry Road, Edinburgh', 'EH11 1LJ, Scotland, UK'],
       action: null
     },
     {
@@ -63,12 +63,6 @@ const ContactSection = () => {
       title: 'Email',
       details: ['info@daniblues.com'],
       action: 'mailto:info@daniblues.com'
-    },
-    {
-      icon: ClockIcon,
-      title: 'Hours',
-      details: ['Mon - Fri: 9:00 - 18:00', 'Sat: 9:00 - 16:00'],
-      action: null
     }
   ];
 
