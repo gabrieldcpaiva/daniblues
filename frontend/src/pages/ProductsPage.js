@@ -8,6 +8,8 @@ const ProductsPage = () => {
   const toggleProduct = (productId) => {
     setExpandedProduct(expandedProduct === productId ? null : productId);
   };
+
+  const products = [
     {
       id: 'bioplastia-clinic',
       name: 'Bioplastia Clinic',
