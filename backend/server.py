@@ -55,10 +55,28 @@ class ProductInquiry(BaseModel):
 
 @app.get("/api/health")
 async def health_check():
-    return {"status": "healthy", "message": "Dani Blues API is running"}
+    health_status = {"status": "healthy", "message": "Dani Blues API is running"}
+    
+    # Check database connection
+    if db is not None:
+        try:
+            await db.admin.command('ping')
+            health_status["database"] = "connected"
+        except Exception as e:
+            logger.error(f"Database health check failed: {e}")
+            health_status["database"] = "disconnected"
+            health_status["status"] = "degraded"
+    else:
+        health_status["database"] = "not_configured"
+        health_status["status"] = "degraded"
+    
+    return health_status
 
 @app.post("/api/contact")
 async def submit_contact_form(contact: ContactForm):
+    if db is None:
+        raise HTTPException(status_code=503, detail="Database service unavailable")
+    
     try:
         contact_data = {
             "id": str(uuid.uuid4()),
@@ -72,12 +90,17 @@ async def submit_contact_form(contact: ContactForm):
         }
         
         result = await db.contacts.insert_one(contact_data)
+        logger.info(f"Contact form submitted: {contact_data['id']}")
         return {"message": "Contact form submitted successfully", "id": contact_data["id"]}
     except Exception as e:
+        logger.error(f"Error submitting contact form: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/product-inquiry")
 async def submit_product_inquiry(inquiry: ProductInquiry):
+    if db is None:
+        raise HTTPException(status_code=503, detail="Database service unavailable")
+    
     try:
         inquiry_data = {
             "id": str(uuid.uuid4()),
@@ -91,8 +114,10 @@ async def submit_product_inquiry(inquiry: ProductInquiry):
         }
         
         result = await db.product_inquiries.insert_one(inquiry_data)
+        logger.info(f"Product inquiry submitted: {inquiry_data['id']}")
         return {"message": "Product inquiry submitted successfully", "id": inquiry_data["id"]}
     except Exception as e:
+        logger.error(f"Error submitting product inquiry: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/services")
