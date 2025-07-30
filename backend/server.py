@@ -7,6 +7,11 @@ from dotenv import load_dotenv
 from motor.motor_asyncio import AsyncIOMotorClient
 from datetime import datetime
 import uuid
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 
@@ -21,10 +26,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# MongoDB connection
-MONGO_URL = os.environ.get("MONGO_URL")
-client = AsyncIOMotorClient(MONGO_URL)
-db = client.daniblues
+# MongoDB connection with error handling
+try:
+    MONGO_URL = os.environ.get("MONGO_URL")
+    logger.info(f"Connecting to MongoDB: {MONGO_URL}")
+    client = AsyncIOMotorClient(MONGO_URL)
+    db = client.daniblues
+except Exception as e:
+    logger.error(f"Failed to connect to MongoDB: {e}")
+    # Continue without database for basic health checks
+    client = None
+    db = None
 
 # Pydantic models
 class ContactForm(BaseModel):
