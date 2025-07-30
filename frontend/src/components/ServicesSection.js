@@ -20,25 +20,25 @@ const ServicesSection = () => {
             id: "haircuts",
             title: "Professional Haircuts",
             description: "Expert haircuts tailored to your unique style and face shape",
-            icon: "https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/hwyeqpwg_icon_scissors.png"
+            icon: "✂️"
           },
           {
             id: "treatments",
-            title: "Brazilian Hair Treatments",
+            title: "Brazilian Hair Treatments", 
             description: "Premium Brazilian hair treatments for restoration and revitalization",
-            icon: "https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/tp5hr1sk_icon_treatments.png"
+            icon: "💆‍♀️"
           },
           {
             id: "products",
             title: "Lowell Product Sales",
             description: "High-quality Lowell hair products for professional home care",
-            icon: "https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/audqj18z_icon_products.png"
+            icon: "🧴"
           },
           {
             id: "analysis",
             title: "Online Hair Analysis",
             description: "Professional online consultation and hair analysis services",
-            icon: "https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/13fexffk_icon_online.png"
+            icon: "💻"
           }
         ]);
       } finally {
