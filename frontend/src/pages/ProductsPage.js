@@ -23,7 +23,7 @@ const ProductsPage = () => {
         'Protein Mask',
         'Sealing Complex'
       ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/fak5z9j3_product_bioplastia.png'
     },
     {
       id: 'power-nutri',
@@ -39,7 +39,7 @@ const ProductsPage = () => {
         'Conditioner',
         'Intensive Mask'
       ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/lnqlzkrd_product_protectcare.png'
     },
     {
       id: 'liso-magico',
@@ -56,7 +56,7 @@ const ProductsPage = () => {
         'Smoothing Oil (300ml)',
         'Treatment Mask (2400ml)'
       ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/ob65zzuu_product_lisomagico.png'
     },
     {
       id: 'cacho-magico',
@@ -73,7 +73,7 @@ const ProductsPage = () => {
         'Curl Activator Cream',
         'Definition Mask'
       ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/9p1vzy8v_product_cacho.png'
     },
     {
       id: 'royal-bee',
@@ -89,7 +89,7 @@ const ProductsPage = () => {
         'Straightening Protein (1000ml)',
         'Conditioning Treatment (2000ml)'
       ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/42clj84n_product_royalbee.png'
     },
     {
       id: 'violet-platinum',
