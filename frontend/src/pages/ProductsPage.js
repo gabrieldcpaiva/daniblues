@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
-import ProductInquiryModal from '../components/ProductInquiryModal';
 
 const ProductsPage = () => {
   const [expandedProduct, setExpandedProduct] = useState(null);
