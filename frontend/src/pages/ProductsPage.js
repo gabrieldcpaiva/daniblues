@@ -226,15 +226,14 @@ const ProductsPage = () => {
                       </div>
                     </div>
                     <div className="flex items-center space-x-4">
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleBuyNow(product);
-                        }}
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=447403477724&text&type=phone_number&app_absent=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="btn-primary px-6 py-2"
                       >
-                        Buy Now
-                      </button>
+                        ✨ Request Your Ritual
+                      </a>
                       {expandedProduct === product.id ? (
                         <ChevronUpIcon className="w-6 h-6 text-gold-500" />
                       ) : (
