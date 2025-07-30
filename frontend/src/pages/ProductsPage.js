@@ -5,7 +5,9 @@ import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 const ProductsPage = () => {
   const [expandedProduct, setExpandedProduct] = useState(null);
 
-  const products = [
+  const toggleProduct = (productId) => {
+    setExpandedProduct(expandedProduct === productId ? null : productId);
+  };
     {
       id: 'bioplastia-clinic',
       name: 'Bioplastia Clinic',
