@@ -105,7 +105,7 @@ const ProductsPage = () => {
         'Toning Conditioner',
         'Platinum Mask'
       ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/kpl8lzxw_product_violet.png'
     },
     {
       id: 'ends',
@@ -121,7 +121,7 @@ const ProductsPage = () => {
         'Repair Treatment',
         'Protective Leave-in'
       ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/p7di6zuu_product_ends.png'
     },
     {
       id: 'mirtilo',
@@ -137,7 +137,7 @@ const ProductsPage = () => {
         'Dual-Action Conditioner',
         'Root Control Serum'
       ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/237p1jrg_product_mirtilo.png'
     },
     {
       id: 'dynamic',
@@ -153,7 +153,7 @@ const ProductsPage = () => {
         'Biotin Conditioner',
         'Growth Serum'
       ],
-      image: 'https://images.pexels.com/photos/7142792/pexels-photo-7142792.jpeg'
+      image: 'https://customer-assets.emergentagent.com/job_daniblues-hair/artifacts/wmsfn4sj_product_dynamic.png'
     }
   ];
 
