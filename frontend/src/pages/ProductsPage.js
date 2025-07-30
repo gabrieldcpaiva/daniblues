@@ -337,17 +337,6 @@ const ProductsPage = () => {
           </motion.div>
         </div>
       </section>
-
-      {/* Product Inquiry Modal */}
-      {showModal && (
-        <ProductInquiryModal
-          product={selectedProduct}
-          onClose={() => {
-            setShowModal(false);
-            setSelectedProduct(null);
-          }}
-        />
-      )}
     </div>
   );
 };
