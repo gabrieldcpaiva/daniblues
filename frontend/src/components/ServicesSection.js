@@ -120,12 +120,8 @@ const ServicesSection = () => {
               className="card-elegant p-8 text-center group"
             >
               {/* Icon */}
-              <div className="mb-6 group-hover:scale-110 transition-transform duration-300 flex justify-center">
-                <img 
-                  src={service.icon} 
-                  alt={service.title}
-                  className="w-16 h-16 object-contain"
-                />
+              <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300 filter grayscale hover:grayscale-0">
+                {service.icon}
               </div>
               
               {/* Title */}
