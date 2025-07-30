@@ -258,14 +258,13 @@ const ProductsPage = () => {
                         {/* Benefits */}
                         <div>
                           <h4 className="font-semibold text-elegant-black mb-4">Benefits</h4>
-                          <ul className="space-y-2">
+                          <div className="flex flex-wrap gap-2 mb-4">
                             {product.benefits.map((benefit, idx) => (
-                              <li key={idx} className="flex items-start space-x-2">
-                                <div className="w-2 h-2 bg-gold-500 rounded-full mt-2 flex-shrink-0"></div>
-                                <span className="text-gray-600">{benefit}</span>
-                              </li>
+                              <span key={idx} className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">
+                                {benefit}
+                              </span>
                             ))}
-                          </ul>
+                          </div>
                         </div>
 
                         {/* Products in Line */}
@@ -274,7 +273,7 @@ const ProductsPage = () => {
                           <ul className="space-y-2">
                             {product.products.map((item, idx) => (
                               <li key={idx} className="flex items-start space-x-2">
-                                <div className="w-2 h-2 bg-gold-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
                                 <span className="text-gray-600">{item}</span>
                               </li>
                             ))}
@@ -282,37 +281,18 @@ const ProductsPage = () => {
                         </div>
                       </div>
 
-                      {/* Before/After Placeholder */}
-                      <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-                        <h4 className="font-semibold text-elegant-black mb-4 text-center">
-                          Before & After Results
-                        </h4>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          <div className="bg-white rounded-lg p-4 text-center">
-                            <div className="w-full h-32 bg-gray-200 rounded-lg flex items-center justify-center mb-2">
-                              <span className="text-gray-400">Before</span>
-                            </div>
-                            <p className="text-sm text-gray-600">Results may vary</p>
-                          </div>
-                          <div className="bg-white rounded-lg p-4 text-center">
-                            <div className="w-full h-32 bg-gold-100 rounded-lg flex items-center justify-center mb-2">
-                              <span className="text-gold-600">After</span>
-                            </div>
-                            <p className="text-sm text-gray-600">Professional treatment</p>
-                          </div>
-                        </div>
-                      </div>
-
                       {/* Action Buttons */}
                       <div className="mt-6 flex flex-col sm:flex-row gap-4">
-                        <button
-                          onClick={() => handleBuyNow(product)}
-                          className="btn-primary flex-1"
-                        >
-                          Buy This Product Line
-                        </button>
                         <a
-                          href={`https://wa.me/${process.env.REACT_APP_WHATSAPP_NUMBER?.replace('+', '')}?text=Hi! I'm interested in the ${product.name} product line. Can you tell me more?`}
+                          href="https://api.whatsapp.com/send/?phone=447403477724&text&type=phone_number&app_absent=0"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-primary flex-1 text-center"
+                        >
+                          ✨ Request Your Ritual
+                        </a>
+                        <a
+                          href="https://api.whatsapp.com/send/?phone=447403477724&text&type=phone_number&app_absent=0"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="btn-secondary flex-1 text-center"
