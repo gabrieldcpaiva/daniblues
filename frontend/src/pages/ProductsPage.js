@@ -222,9 +222,9 @@ const ProductsPage = () => {
                         href="https://api.whatsapp.com/send/?phone=447403477724&text&type=phone_number&app_absent=0"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-primary px-6 py-2"
+                        className="bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium px-4 py-2 rounded-md transition-all duration-300 hover:scale-105"
                       >
-                        ✨ Request Your Ritual
+                        Buy
                       </a>
                       {expandedProduct === product.id ? (
                         <ChevronUpIcon className="w-6 h-6 text-gold-500" />
