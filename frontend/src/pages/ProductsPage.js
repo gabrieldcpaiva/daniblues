@@ -276,20 +276,20 @@ const ProductsPage = () => {
                       </div>
 
                       {/* Action Buttons */}
-                      <div className="mt-6 flex flex-col sm:flex-row gap-4">
+                      <div className="mt-6 flex flex-col sm:flex-row gap-3">
                         <a
                           href="https://api.whatsapp.com/send/?phone=447403477724&text&type=phone_number&app_absent=0"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="btn-primary flex-1 text-center"
+                          className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 text-center flex-1"
                         >
-                          ✨ Request Your Ritual
+                          Buy This Product
                         </a>
                         <a
                           href="https://api.whatsapp.com/send/?phone=447403477724&text&type=phone_number&app_absent=0"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="btn-secondary flex-1 text-center"
+                          className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 text-center flex-1"
                         >
                           Ask Questions
                         </a>
