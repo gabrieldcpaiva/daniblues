@@ -89,7 +89,7 @@ async def submit_contact_form(contact: ContactForm):
             "status": "new"
         }
         
-        result = await db.contacts.insert_one(contact_data)
+        await db.contacts.insert_one(contact_data)
         logger.info(f"Contact form submitted: {contact_data['id']}")
         return {"message": "Contact form submitted successfully", "id": contact_data["id"]}
     except Exception as e:
