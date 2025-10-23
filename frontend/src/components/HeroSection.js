@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-elegant-black" style={{ minHeight: 'calc(100vh - 64px)' }}>
+    <section className="relative flex items-center justify-center overflow-hidden bg-elegant-black" style={{ minHeight: '100vh', height: '100vh' }}>
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="w-full h-full bg-gradient-to-br from-elegant-black via-gray-900 to-elegant-black"></div>
