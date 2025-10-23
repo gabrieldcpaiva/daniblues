@@ -113,7 +113,7 @@ async def submit_product_inquiry(inquiry: ProductInquiry):
             "status": "new"
         }
         
-        result = await db.product_inquiries.insert_one(inquiry_data)
+        await db.product_inquiries.insert_one(inquiry_data)
         logger.info(f"Product inquiry submitted: {inquiry_data['id']}")
         return {"message": "Product inquiry submitted successfully", "id": inquiry_data["id"]}
     except Exception as e:
