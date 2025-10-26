@@ -37,27 +37,107 @@ A sophisticated two-page website for Dani Blues Hair & Beauty, a premium UK salo
 ## Getting Started
 
 ### Prerequisites
-- Node.js and yarn
+
+- Node.js 16+ and yarn
 - Python 3.8+
 - MongoDB
 
-### Installation
+## Setup
 
-1. Install backend dependencies:
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/gabrieldcpaiva/daniblues.git
+cd daniblues
+```
+
+### 2. Environment Configuration
+
+Copy the `.env.example` file and configure your environment variables:
+
+```bash
+cp .env.example .env
+```
+
+Update the `.env` file with your specific configuration:
+- Database connection string (MongoDB URI)
+- API URLs
+- WhatsApp contact number
+- Security keys
+- CORS origins
+
+### 3. Backend Setup
+
+Install Python dependencies:
+
 ```bash
 cd backend
 pip install -r requirements.txt
 ```
 
-2. Install frontend dependencies:
+Start the backend server:
+
+```bash
+# Development
+python server.py
+
+# Production (with uvicorn)
+uvicorn server:app --host 0.0.0.0 --port 8000
+```
+
+### 4. Frontend Setup
+
+Install Node.js dependencies:
+
 ```bash
 cd frontend
 yarn install
 ```
 
-3. Start the services:
+Start the development server:
+
 ```bash
-sudo supervisorctl restart all
+# Development
+yarn start
+
+# Build for production
+yarn build
+```
+
+### 5. Database Setup
+
+Ensure MongoDB is running locally or configure a remote MongoDB connection in your `.env` file.
+
+```bash
+# Start MongoDB locally (if installed)
+mongod
+```
+
+### 6. Running the Application
+
+**Development Mode:**
+
+1. Start MongoDB (if local)
+2. Start the backend server (port 8000)
+3. Start the frontend server (port 3000)
+4. Access the application at `http://localhost:3000`
+
+**Production Mode:**
+
+1. Build the frontend: `cd frontend && yarn build`
+2. Start the backend with uvicorn: `uvicorn server:app --host 0.0.0.0 --port 8000`
+3. Serve the frontend build or use the deployment configuration
+
+### 7. Testing
+
+```bash
+# Backend tests
+cd backend
+python backend_test.py
+
+# Frontend tests (if configured)
+cd frontend
+yarn test
 ```
 
 ## Services
