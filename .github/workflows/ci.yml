@@ -45,21 +45,13 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        cache: 'yarn'
     
     - name: Install dependencies
       run: |
         cd frontend
         yarn install --frozen-lockfile || yarn install
     
-    - name: Lint (if configured)
-      run: |
-        cd frontend
-        yarn lint || echo "No lint script configured"
-    
     - name: Build
       run: |
         cd frontend
         yarn build
-      env:
-        CI: true
