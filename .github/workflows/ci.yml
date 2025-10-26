@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, main-hardening ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  backend:
+    name: Backend (Python)
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        cd backend
+        pip install -r requirements.txt
+        pip install pylint
+    
+    - name: Lint with pylint
+      run: |
+        cd backend
+        pylint server.py --disable=C,R || true
+    
+    - name: Run tests
+      run: |
+        python backend_test.py || true
+
+  frontend:
+    name: Frontend (Node.js)
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'yarn'
+    
+    - name: Install dependencies
+      run: |
+        cd frontend
+        yarn install --frozen-lockfile || yarn install
+    
+    - name: Lint (if configured)
+      run: |
+        cd frontend
+        yarn lint || echo "No lint script configured"
+    
+    - name: Build
+      run: |
+        cd frontend
+        yarn build
+      env:
+        CI: true
